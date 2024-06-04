@@ -10,14 +10,13 @@ question_bank = []
 
 #pair = question_data[i]
 
-for i in [0, len(question_data) - 1]:
-    q_dic = question_data[i]
-    text = q_dic["text"]
-    answer = q_dic["answer"]
-    question = Question(text, answer)
-    question_bank.append(question)
+for question in question_data:
+    question_text = question["text"]
+    question_answer = question["answer"]
+    new_question = Question(question_text, question_answer)
+    question_bank.append(new_question)
 
-print(question_bank)
+print(question_bank[0].text)
 
 # question_1 = Question("The Backstreet Boys had 4 members.", "False")
 
