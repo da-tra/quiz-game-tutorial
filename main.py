@@ -7,18 +7,17 @@ from data import question_data
 
 question_bank = []
 
-dic = question_data[1]
+
 #pair = question_data[i]
 
-# text / answer = 
-print(question_data[1]["text"])
-print(question_data[1]["answer"])
-
-for q in question_data:
-    question = Question()
-    question(q, question_data[q])
+for i in [0, len(question_data) - 1]:
+    q_dic = question_data[i]
+    text = q_dic["text"]
+    answer = q_dic["answer"]
+    question = Question(text, answer)
     question_bank.append(question)
-#     append ...
+
+print(question_bank)
 
 # question_1 = Question("The Backstreet Boys had 4 members.", "False")
 

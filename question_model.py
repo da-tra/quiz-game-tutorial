@@ -4,6 +4,6 @@ class Question:
         self.text = q_text
         self.answer = q_answer
 
-question_1 = Question("The Backstreet Boys had 4 members.", "False")
+# question_1 = Question("The Backstreet Boys had 4 members.", "False")
 
-print(question_1.text, question_1.answer)
+# print(question_1.text, question_1.answer)
