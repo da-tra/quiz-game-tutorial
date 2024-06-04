@@ -7,6 +7,13 @@ from data import question_data
 
 question_bank = []
 
+dic = question_data[1]
+#pair = question_data[i]
+
+# text / answer = 
+print(question_data[1]["text"])
+print(question_data[1]["answer"])
+
 for q in question_data:
     question = Question()
     question(q, question_data[q])
