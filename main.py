@@ -2,14 +2,14 @@ from question_model import Question
 from data import question_data
 from quiz_brain import QuizBrain
 
-#write a for loop to iterate over the question_data.
+# write a for loop to iterate over the question_data.
 # create a question object from each entry in question_data.
 # append each question to the data bank.
 
 question_bank = []
 
 
-#pair = question_data[i]
+# pair = question_data[i]
 
 for question in question_data:
     question_text = question["text"]
@@ -19,4 +19,8 @@ for question in question_data:
 
 # print(question_bank[0].text)
 quiz = QuizBrain(question_bank)
-quiz.next_question
+
+while quiz.still_has_questions():
+    quiz.next_question()
+
+    # quiz.question_number += 1
