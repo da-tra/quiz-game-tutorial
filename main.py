@@ -20,7 +20,11 @@ for question in question_data:
 # print(question_bank[0].text)
 quiz = QuizBrain(question_bank)
 
+# print(quiz.question_number)
+
 while quiz.still_has_questions():
     quiz.next_question()
 
     # quiz.question_number += 1
+print("You've completed the quiz.")
+print(f"Your final score is {quiz.score} / {quiz.question_number}.")
